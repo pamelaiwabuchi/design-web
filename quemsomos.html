@@ -3,45 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Quem Somos - UniTeV</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
-
 </head>
-<body>
-    <header>
-        <nav>
-            <img src="./imagens/2logo_sem_fundo_20260318_080823_0000.svg" alt="Logo UniTeV" width="150">
-            <div id="barra-nav">
+<body class="min-h-screen flex flex-col">
+    <header >
+        <h1 id="h1-home" class="text-center py-4 font-bold bg-sky-950 text-sky-100">
+            UniTeV - Excelência Tecnológica em São José dos Campos
+        </h1>
+        <nav class="flex items-center justify-between h-30 px-20 bg-sky-950 text-sky-100">       
+            <div>
+            <img  class="-mt-6" src="./imagens/2logo_sem_fundo_20260318_080823_0000.svg" alt="Logo UniTeV" width="150">
+            </div>
+            <div id="barra-nav" class=" -mt-6 flex gap-x-14 text-sky-50 font-bold">
             <a href="index.html">Home</a>
             <a href="quemsomos.html">Quem Somos</a>
             <a href="contato.html">Contato</a>
             </div>
         </nav>
     </header>
-    <main>
-    <section>
-        <h1>Quem Somos</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos at aut asperiores incidunt molestias ipsam enim quia itaque numquam recusandae, aspernatur laborum vel magnam architecto aperiam? Ex inventore iusto eos.</p>
-        <h2>5 motivos para estudar conosco</h2>
-        <ol>
+    <main class="flex-1">
+    <!--space-y-6-->
+    <section class="px-20">
+        <h1 class="font-bold pt-10">Quem Somos</h1>
+        <p class="py-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos at aut asperiores incidunt molestias ipsam enim quia itaque numquam recusandae, aspernatur laborum vel magnam architecto aperiam? Ex inventore iusto eos.</p>
+        <h2 class="font-bold">5 motivos para estudar conosco</h2>
+        <ol class="py-10">
             <li>Professores renomados</li>
             <li>Laboratórios de ponta</li>
             <li>Universidade bem avaliada</li>
             <li>Ótima localização</li>
         </ol>
-        <h2>Objetivos</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur molestiae pariatur error illum, ratione corrupti quasi nisi reprehenderit autem voluptatum, eligendi nostrum non. Provident minus eius nostrum, velit animi itaque.</p>
+        <h2 class="font-bold">Objetivos</h2>
+        <p class="py-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur molestiae pariatur error illum, ratione corrupti quasi nisi reprehenderit autem voluptatum, eligendi nostrum non. Provident minus eius nostrum, velit animi itaque.</p>
     </section>
     </main>
 </body>
-<footer>
+    <footer class="px-20 text-center font-bold bg-sky-950 text-sky-50 py-8">
         <p>Todos os direitos reservados.</p>
     </footer>
 </html>

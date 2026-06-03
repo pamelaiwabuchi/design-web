@@ -37,6 +37,10 @@ def contato():
 
         return redirect(url_for("contato"))
     return render_template("contato.html")
+    
+@app.route("/quemsomos")
+def quemsomos():
+    return render_template("quemsomos.html")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
